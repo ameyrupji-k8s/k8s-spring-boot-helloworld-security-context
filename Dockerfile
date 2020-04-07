@@ -17,4 +17,5 @@ RUN chown 1988:1988 helloworld.jar \
 
 USER 1988
 
+# Removing exec will break graceful shutdown hooks.
 CMD exec /procfile
