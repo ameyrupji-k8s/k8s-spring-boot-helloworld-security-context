@@ -46,7 +46,7 @@ This creates an User and Group with id `1988`. Gives ownership of the `helloworl
 
 ### Adding Security Context
 
-Add this code to this spring-boot-helloworld-chart/templates/deployment.yaml in the spec.template.spec section
+Add this code to this `spring-boot-helloworld-chart/templates/deployment.yaml` in the `spec.template.spec` section
 
 ```yaml
       securityContext:
@@ -59,7 +59,7 @@ Add this code to this spring-boot-helloworld-chart/templates/deployment.yaml in 
 Similar to the above comment. This starts the pod as a non root user and with user and group id `1988`
 
 
-**Note:** Rebuild your docker container using docker build -t spring-boot-helloworld:v1 . as there is a slight change also to the `Dockerfile` which now calls a `procfile` on container initialization.
+**Note:** Rebuild your docker container using `docker build -t spring-boot-helloworld:v1 .` as there is a slight change also to the `Dockerfile` which now calls a `procfile` on container initialization.
 
 ## Test 
 
