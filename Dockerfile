@@ -17,4 +17,4 @@ RUN chown 1988:1988 helloworld.jar \
 
 USER 1988
 
-CMD /procfile
+CMD exec /procfile
